@@ -5,100 +5,51 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/main.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+    
+    
     <title>Formulário</title>
   </head>
   <body>
-    <div>
-      <h1>Teste Formulário</h1>
-      <p>testando um formulário qualquer</p>
-    </div>
-
-    <form action="">
-      <fieldset>
+    <aside class="banner"></aside>
+    <aside class="formulário">
+      <div class="conteúdo-formulário">
         <div>
-          <label for="nome">Nome</label>
-          <input type="text" nome="nome" id="nome" />
+          <h1>LOGO</h1>
+          <p>Criar Conta</p>
         </div>
-        <div>
-          <label for="sobrenome">Sobrenome</label>
-          <input type="text" nome="sobrenome" id="sobrenome" />
-        </div>
-      </fieldset>
-      <div>
-        <label for="email">email</label>
-        <input type="email" name="email" id="email" />
-      </div>
-      <div>
-        <label>De qual lado da aplicação você desenvolve ?</label>
-        <label
-          ><input type="radio" name="devweb" value="frontend" />Front-end</label
-        >
-        <label
-          ><input type="radio" name="devweb" value="back-end" />Back-end</label
-        >
-        <label
-          ><input
-            type="radio"
-            name="devweb"
-            value="fullstack"
-          />Fullstack</label
-        >
-      </div>
-      <div>
-        <label>Senioridade</label>
-        <select name="" id="senioridade">
-          <option selected disabled value="">Selecione</option>
-          <option>Junior</option>
-          <option>Pleno</option>
-          <option>Junior</option>
-          <option>Senior</option>
-        </select>
-      </div>
-      <fieldset>
-        <div>
-          <label for="">Selecione as tecnologias que utiliza:</label>
-          <input
-            type="checkbox"
-            id="tecnologia1"
-            nome="tecnologia1"
-            value="html"
-          />
-          <label for="tecnologia1">HTML</label>
-          <input
-            type="checkbox"
-            id="tecnologia1"
-            nome="tecnologia2"
-            value="html"
-          />
-          <label for="tecnologia2">CSS</label>
-          <input
-            type="checkbox"
-            id="tecnologia1"
-            nome="tecnologia3"
-            value="html"
-          />
-          <label for="tecnologia3">Javascript</label>
-          <input
-            type="checkbox"
-            id="tecnologia1"
-            nome="tecnologia4"
-            value="html"
-          />
-          <label for="tecnologia4">PHP</label>
-        </div>
-      </fieldset>
-      <div>
-        <br />
-        <label>Conte um pouco da sua experiência</label>
-        <textarea
-          name="experiência"
-          id="experiência"
-          cols="30"
-          rows="10"
-        ></textarea>
-      </div>
-
-      <button type="submit">Concluído</button>
-    </form>
+        <form action="">
+          <fieldset>
+            <div>
+              <label for="nome">Nome</label>
+              <input type="text" nome="nome" id="nome" />
+            </div>
+            <div>
+              <label for="sobrenome">Senha</label>
+              <input type="text" nome="sobrenome" id="sobrenome" />
+            </div>
+          </fieldset>
+          <div>
+            <label for="email">email</label>
+            <input type="email" name="email" id="email" />
+          </div>
+          <fieldset>
+            <div>
+              <label for="">Selecione as tecnologias que utiliza:</label>
+              <input
+                type="checkbox"
+                id="tecnologia1"
+                nome="tecnologia1"
+                value="html"
+              />
+            </div>
+          </fieldset>
+          <button type="submit">Concluído</button>
+        </form>
+      </div> 
+   </aside>
   </body>
 </html>

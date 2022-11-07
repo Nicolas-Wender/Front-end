@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   /* HTML5 display-role reset for older browsers */
 }
@@ -42,4 +43,43 @@
 * table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+
+body {
+  background-color: rgb(74, 18, 162);
+  display: flex;
+  flex-direction: row;
+  font-family: "Poppins", sans-serif;
+}
+
+.banner {
+  width: 60%;
+}
+
+.formulário {
+  background-color: hsl(0deg, 0%, 98%);
+  border-radius: 60px 0px 0px 60px;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.formulário .conteúdo-formulário {
+  width: 60%;
+  height: 60%;
+  border: 10px solid red;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.formulário .conteúdo-formulário h1 {
+  font-size: 32px;
+  font-weight: 800;
+}
+.formulário .conteúdo-formulário p {
+  font-size: 32px;
+  font-weight: 800;
 }/*# sourceMappingURL=main.css.map */
