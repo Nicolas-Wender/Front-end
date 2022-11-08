@@ -4,41 +4,42 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles/main.css">
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">
-    
-    
+    <link rel="stylesheet" href="styles/main.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+
     <title>Formulário</title>
   </head>
   <body>
-    <aside class="banner"></aside>
-    <aside class="formulário">
-      <div class="conteúdo-formulário">
-        <div>
-          <h1>LOGO</h1>
-          <p>Criar Conta</p>
-        </div>
-        <form action="">
-          <fieldset>
-            <div>
-              <label for="nome">Nome</label>
-              <input type="text" nome="nome" id="nome" />
-            </div>
-            <div>
-              <label for="sobrenome">Senha</label>
-              <input type="text" nome="sobrenome" id="sobrenome" />
-            </div>
-          </fieldset>
-          <div>
-            <label for="email">email</label>
-            <input type="email" name="email" id="email" />
+    <div class="container">
+      <aside class="banner">HELLO</aside>
+      <aside class="formulário">
+        <div class="conteúdo-formulário">
+          <div class="form-header">
+            <p>Welcome!</p>
           </div>
-          <fieldset>
-            <div>
-              <label for="">Selecione as tecnologias que utiliza:</label>
+          <form action="">
+            <fieldset>
+              <div class="nome">
+                <label for="nome">Nome</label>
+                <input type="text" nome="nome" id="nome" />
+              </div>
+              <div class="senha">
+                <label for="sobrenome">Senha</label>
+                <input type="text" nome="sobrenome" id="sobrenome" />
+              </div>
+              <div class="email">
+                <label for="email">email</label>
+                <input type="email" name="email" id="email" />
+              </div>
+            </fieldset>
+            <div class="termosDeUso">
+              <label for="">Concordar com os Termos De Uso</label>
               <input
                 type="checkbox"
                 id="tecnologia1"
@@ -46,10 +47,10 @@
                 value="html"
               />
             </div>
-          </fieldset>
-          <button type="submit">Concluído</button>
-        </form>
-      </div> 
-   </aside>
+            <button type="submit">Concluído</button>
+          </form>
+        </div>
+      </aside>
+    </div>
   </body>
 </html>

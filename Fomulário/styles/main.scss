@@ -46,45 +46,49 @@
   }
 }
 
+
+
+
 body{
-  background-color: $Purple; 
-  display: flex;
-  flex-direction: row;
-  font-family: 'Poppins', sans-serif;
-}
-
-.banner{
-  width: 60%;
-}
-
-.formulário{
-  background-color: $Almost-White;
-  border-radius: 60px 0px 0px 60px;
   width: 100%;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  
-    
+  background-color: $Purple;
+  font-family: 'Poppins', sans-serif;
+}
 
-  .conteúdo-formulário{
+.container{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  overflow: hidden;
+  .banner{
+    width: 40%;
+  }
+  .formulário{
+    border-radius: 20px 0px 0px 20px;
     width: 60%;
-    height: 60%;
-    border: 10px solid red;
+    background-color: $Almost-White;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    h1{
-      font-size: 32px;
-      font-weight: 800;
+    .conteúdo-formulário{
+      width: 80%;
+      height: 80%;
+      border: 2px solid red;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .form-header{
+        margin-bottom: 4rem;
+        font-size: 2rem;
+      }
+      
+      form div{
+        margin: 2rem;
+      }
     }
-    p{
-      font-size: 32px;
-      font-weight: 800;
-    }
-    
   }
 }
