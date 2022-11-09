@@ -19,36 +19,44 @@
     <div class="container">
       <aside class="banner">HELLO</aside>
       <aside class="formulário">
-        <div class="conteúdo-formulário">
+        <form action="">
           <div class="form-header">
-            <p>Welcome!</p>
+            <h1>Welcome!</h1>
+            <h2>A expressão Lorem ipsum em design gráfico e editoração é um texto padrão em latim utilizado na produção gráfica </h2>
           </div>
-          <form action="">
-            <fieldset>
-              <div class="nome">
-                <label for="nome">Nome</label>
-                <input type="text" nome="nome" id="nome" />
-              </div>
-              <div class="senha">
-                <label for="sobrenome">Senha</label>
-                <input type="text" nome="sobrenome" id="sobrenome" />
-              </div>
-              <div class="email">
-                <label for="email">email</label>
-                <input type="email" name="email" id="email" />
-              </div>
-            </fieldset>
-            <div class="termosDeUso">
-              <label for="">Concordar com os Termos De Uso</label>
-              <input
-                type="checkbox"
-                id="tecnologia1"
-                nome="tecnologia1"
-                value="html"
-              />
+          <fieldset>
+            <div class="label">
+              <input type="text" nome="nome" for="nome" />
+              <label id="nome">Nome</label>
             </div>
+            <div class="label">
+              <input type="text" nome="sobrenome" for="sobrenome" />
+              <label id="sobrenome">Senha</label>
+            </div>
+            <div class="label">
+              <input type="email" name="email" for="email" />
+              <label id="email">email</label>
+            </div>
+            <div class="label">
+              <input type="text" nome="nome" for="nome" />
+              <label id="nome">Telefone</label>
+            </div>
+          </fieldset>
+          <div class="termosDeUso">
+            <input type="checkbox" for="termosUso" nome="termosDeUso" />
+            <label id="termosUso">Concordar com os Termos De Uso</label>
+          </div>
+          <div class="buttonConcluido">
             <button type="submit">Concluído</button>
-          </form>
+          </div>
+        </form>
+        <div class="outrasOpções">
+          <p>Ou você pode entrar com:</p>
+          <div class="botoes">
+            <button class="google">Google</button>
+            <button class="twitter">Twitter</button>
+            <button class="facebook">Facebook</button>
+          </div>
         </div>
       </aside>
     </div>
