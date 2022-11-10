@@ -69,7 +69,7 @@ body {
 .formulário {
   border-radius: 20px 0px 0px 20px;
   width: 55%;
-  padding: 6% 10%;
+  padding: 10%;
   background-color: hsl(0deg, 0%, 98%);
   display: flex;
   justify-content: center;
@@ -81,8 +81,9 @@ body {
   font-size: 2rem;
 }
 .form-header h2 {
+  width: 90%;
   margin: 1rem 0 1rem 0;
-  font-size: 16px;
+  font-size: 14px;
   color: hsl(0deg, 0%, 41%);
   flex-wrap: wrap;
 }
@@ -93,37 +94,35 @@ body {
 }
 .label input {
   outline: none;
-  font-size: 24px;
-  width: 100%;
+  font-size: 18px;
+  width: 90%;
   border: none;
   background-color: transparent;
   border-bottom: 2px solid #4038a0;
 }
-.label input:focus + label {
-  top: -15px;
-  font-size: 12px;
-  color: hsl(0deg, 0%, 41%);
-}
 .label label {
-  top: -5px;
+  top: -15px;
   left: 0;
   pointer-events: none;
-  font-size: 16px;
+  font-size: 12px;
   position: absolute;
   transition: all 0.2s ease-out;
+  color: hsl(0deg, 0%, 41%);
 }
 
 .termosDeUso {
+  margin-bottom: 16px;
   display: inline-block;
-  font-size: 16px;
+  text-align: center;
+  font-size: 14px;
 }
 .termosDeUso input {
-  width: 20px;
-  height: 20px;
+  width: 16px;
+  height: 16px;
 }
 
 .buttonConcluido {
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 .buttonConcluido button {
   cursor: pointer;
@@ -135,10 +134,14 @@ body {
   border-radius: 20px;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   background-color: rgb(74, 18, 162);
+  transition: all 0.3s ease-in-out;
+}
+.buttonConcluido button:hover {
+  background-color: rgb(57, 15, 126);
 }
 
 .outrasOpções {
-  margin: 2rem 0 1rem 0;
+  margin: 3rem 0 1rem 0;
 }
 .outrasOpções .botoes {
   display: flex;
@@ -155,6 +158,10 @@ body {
   border-radius: 20px;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   background-color: #CF4332;
+  transition: all 0.3s ease-in-out;
+}
+.outrasOpções .botoes .google:hover {
+  background-color: #943126;
 }
 .outrasOpções .botoes .facebook {
   cursor: pointer;
@@ -166,6 +173,10 @@ body {
   border-radius: 20px;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   background-color: #3C66C4;
+  transition: all 0.3s ease-in-out;
+}
+.outrasOpções .botoes .facebook:hover {
+  background-color: #3558a3;
 }
 .outrasOpções .botoes .twitter {
   cursor: pointer;
@@ -177,4 +188,8 @@ body {
   border-radius: 20px;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   background-color: #3698D9;
+  transition: all 0.3s ease-in-out;
+}
+.outrasOpções .botoes .twitter:hover {
+  background-color: #2d7fb6;
 }/*# sourceMappingURL=main.css.map */

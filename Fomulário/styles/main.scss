@@ -81,7 +81,7 @@ body {
 .formulário {
   border-radius: 20px 0px 0px 20px;
   width: 55%;
-  padding: 6% 10%;
+  padding: 10%;
   background-color: $Almost-White;
   display: flex;
   justify-content: center;
@@ -93,8 +93,9 @@ body {
   font-size: 2rem;
 
   h2 {
+    width: 90%;
     margin: 1rem 0 1rem 0;
-    font-size: 16px;
+    font-size: 14px;
     color: $Medium-Gray;
     flex-wrap: wrap;
   }
@@ -106,49 +107,50 @@ body {
 
   input {
     outline: none;
-    font-size: 24px;
-    width: 100%;
+    font-size: 18px;
+    width: 90%;
     border: none;
     background-color: transparent;
     border-bottom: 2px solid #4038a0;
-
-    &:focus+label {
-      top: -15px;
-      font-size: 12px;
-      color: $Medium-Gray;
-    }
   }
 
   label {
-    top: -5px;
+    top: -15px;
     left: 0;
     pointer-events: none;
-    font-size: 16px;
+    font-size: 12px;
     position: absolute;
     transition: all 0.2s ease-out;
+    color: $Medium-Gray;
   }
 }
 
 .termosDeUso{
+  margin-bottom: 16px;
   display: inline-block;
-  font-size: 16px;
+  text-align: center;
+  font-size: 14px;
   input{
-    width: 20px;
-    height: 20px;
+    width: 16px;
+    height: 16px;
   }
 }
 
 .buttonConcluido {
-  margin-top: 2rem;
+  margin-top: 1rem;
 
   button {
     @include button;
     background-color: $Purple;
+    transition: all 0.3s ease-in-out;
+      &:hover{
+        background-color: rgb(57, 15, 126);
+      }
   }
 }
 
 .outrasOpções {
-  margin: 2rem 0 1rem 0;
+  margin: 3rem 0 1rem 0;
 
   .botoes {
     display: flex;
@@ -158,14 +160,26 @@ body {
     .google {
       @include button;
       background-color: #CF4332;
+      transition: all 0.3s ease-in-out;
+      &:hover{
+        background-color: #943126;
+      }
     }
     .facebook{
       @include button;
       background-color: #3C66C4;
+      transition: all 0.3s ease-in-out;
+      &:hover{
+        background-color: #3558a3;
+      }
     }
     .twitter{
       @include button;
       background-color: #3698D9;
+      transition: all 0.3s ease-in-out;
+      &:hover{
+        background-color: #2d7fb6;
+      }
     }
   }
 }
