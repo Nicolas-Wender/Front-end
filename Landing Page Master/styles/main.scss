@@ -18,7 +18,7 @@ header{
   width: 100%;
   height: 5vh;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-  padding: 30px 0;
+  padding: 2rem 0;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -27,28 +27,29 @@ header{
     display: flex;
     flex-direction: row;
     li{
-
-      margin: 0 20px;
+      margin: 0 2rem;
     }
   }
 }
 
 .primeiro-conteudo{
-  display: flex;
   width: 100%;
-  height: 91vh;
+  min-height: 90vh;
+  display: flex;
+  flex-wrap: wrap-reverse;
   border: 5px solid red;
   .texto{
     display: flex;
     align-items: center;
     justify-content: center;
     width: 50%;
-    padding: 70px;
+    padding: 6rem;
     .container-texto{
       display: flex;
       flex-direction: column;
       p{
         margin: 30px 0;
+        text-align: justify;
       }
       button{
         padding: 10px;
@@ -63,23 +64,26 @@ header{
 
 .segundo-conteudo{
   width: 100%;
-  height: 90vh;
+  min-height: 90vh;
   background: #e7e7e7;
-  padding: 70px;
+  padding: 6rem;
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
+  
   .titulo{
     width: 60%;
-    margin: 60px 0;
     p{
       margin: 15px 0;
     }
   }
   .cards{
     display: flex;
-    flex-wrap: nowrap;
     gap: 40px;   
+    flex-wrap: wrap; 
+    width: 100%;
   .card{
+    width: 180px;
     display: flex;
     flex-direction: column;
     h2{
@@ -95,18 +99,18 @@ header{
 
 .terceiro-conteudo{
   width: 100%;
-  height: 100vh;
-  padding: 70px;
+  min-height: 90vh;
+  padding: 6rem;
   display: flex;
   flex-direction: column;
-  h1{
-    margin: 60px 0;
-  }
+  justify-content: space-around;
+  gap: 60px;
   .artigos{
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     gap: 40px; 
     .artigo{
+      width: 235px;
       height: 350px;
       border: 5px solid red;
       display: flex;
@@ -125,6 +129,51 @@ header{
 }
 
 footer{
+  width: 100%;
+  min-height: 40vh;
   background: #3a3a3a;
-  height: 70vh;
+  height: 40vh;
+  padding: 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .logo-icons{
+    border: 5px solid blue;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  
+    .icons{
+      font-size: 12px;
+      display: flex;
+      gap: 40px; 
+    }
+  }
+  
+  .links{
+    margin-left: -15rem;
+    height: 100%;
+    ul{
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      flex-wrap: wrap;
+      height: 100%;
+      width: 15rem;
+      border: 5px solid blue;
+    }
+    
+  }
+
+  .button-copy{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-around;
+    border: 5px solid blue;
+  }
 }
+

@@ -18,7 +18,7 @@ header {
   width: 100%;
   height: 5vh;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-  padding: 30px 0;
+  padding: 2rem 0;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -29,13 +29,14 @@ header ul {
   flex-direction: row;
 }
 header ul li {
-  margin: 0 20px;
+  margin: 0 2rem;
 }
 
 .primeiro-conteudo {
-  display: flex;
   width: 100%;
-  height: 91vh;
+  min-height: 90vh;
+  display: flex;
+  flex-wrap: wrap-reverse;
   border: 5px solid red;
 }
 .primeiro-conteudo .texto {
@@ -43,7 +44,7 @@ header ul li {
   align-items: center;
   justify-content: center;
   width: 50%;
-  padding: 70px;
+  padding: 6rem;
 }
 .primeiro-conteudo .texto .container-texto {
   display: flex;
@@ -51,6 +52,7 @@ header ul li {
 }
 .primeiro-conteudo .texto .container-texto p {
   margin: 30px 0;
+  text-align: justify;
 }
 .primeiro-conteudo .texto .container-texto button {
   padding: 10px;
@@ -62,25 +64,27 @@ header ul li {
 
 .segundo-conteudo {
   width: 100%;
-  height: 90vh;
+  min-height: 90vh;
   background: #e7e7e7;
-  padding: 70px;
+  padding: 6rem;
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
 }
 .segundo-conteudo .titulo {
   width: 60%;
-  margin: 60px 0;
 }
 .segundo-conteudo .titulo p {
   margin: 15px 0;
 }
 .segundo-conteudo .cards {
   display: flex;
-  flex-wrap: nowrap;
   gap: 40px;
+  flex-wrap: wrap;
+  width: 100%;
 }
 .segundo-conteudo .cards .card {
+  width: 180px;
   display: flex;
   flex-direction: column;
 }
@@ -93,20 +97,20 @@ header ul li {
 
 .terceiro-conteudo {
   width: 100%;
-  height: 100vh;
-  padding: 70px;
+  min-height: 90vh;
+  padding: 6rem;
   display: flex;
   flex-direction: column;
-}
-.terceiro-conteudo h1 {
-  margin: 60px 0;
+  justify-content: space-around;
+  gap: 60px;
 }
 .terceiro-conteudo .artigos {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   gap: 40px;
 }
 .terceiro-conteudo .artigos .artigo {
+  width: 235px;
   height: 350px;
   border: 5px solid red;
   display: flex;
@@ -123,6 +127,45 @@ header ul li {
 }
 
 footer {
+  width: 100%;
+  min-height: 40vh;
   background: #3a3a3a;
-  height: 70vh;
+  height: 40vh;
+  padding: 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .logo-icons {
+  border: 5px solid blue;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+footer .logo-icons .icons {
+  font-size: 12px;
+  display: flex;
+  gap: 40px;
+}
+footer .links {
+  margin-left: -15rem;
+  height: 100%;
+}
+footer .links ul {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  flex-wrap: wrap;
+  height: 100%;
+  width: 15rem;
+  border: 5px solid blue;
+}
+footer .button-copy {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-around;
+  border: 5px solid blue;
 }/*# sourceMappingURL=main.css.map */
