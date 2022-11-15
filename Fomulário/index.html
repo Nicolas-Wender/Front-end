@@ -17,13 +17,16 @@
   </head>
   <body>
     <div class="container">
-      <aside class="banner">HELLO</aside>
+      <aside class="banner">
+        <div class="banner-header">
+          <h1>Welcome!</h1>
+          <h2>A expressão Lorem ipsum em design gráfico e editoração é um texto padrão em latim utilizado na produção gráfica </h2>
+        </div>
+        <img src="styles/images/Saly-1.svg" alt="rocket">
+      </aside>
       <aside class="formulário">
-        <form action="">
-          <div class="form-header">
-            <h1>Welcome!</h1>
-            <h2>A expressão Lorem ipsum em design gráfico e editoração é um texto padrão em latim utilizado na produção gráfica </h2>
-          </div>
+        <form class="formulário-cadastro" action="">
+          <h1>Criar Conta</h1>
           <fieldset>
             <div class="label">
               <input type="text" nome="nome" for="nome" />
@@ -41,17 +44,17 @@
               <input type="tel"  nome="telefone" for="telefone" />
               <label id="telefone">Telefone</label>
             </div>
+            <div class="termosDeUso">
+              <input type="checkbox" for="termosUso" nome="termosDeUso" />
+              <label id="termosUso">Concordar com os Termos De Uso</label>
+            </div>
           </fieldset>
-          <div class="termosDeUso">
-            <input type="checkbox" for="termosUso" nome="termosDeUso" />
-            <label id="termosUso">Concordar com os Termos De Uso</label>
-          </div>
           <div class="buttonConcluido">
             <button type="submit">Cadastrar</button>
           </div>
         </form>
         <div class="outrasOpções">
-          <p>Ou você pode entrar com:</p>
+          <p>- Ou -</p>
           <div class="botoes">
             <button class="google">Google</button>
             <button class="twitter">Twitter</button>
