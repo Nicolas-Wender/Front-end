@@ -1,18 +1,23 @@
 @import 'variables';
+@import 'banner';
+@import 'formulário';
 
-*{
+* {
   margin: 0;
   padding: 0;
   border: 0;
   font-size: 100%;
   font: inherit;
+
   ol,
-  ul{
+  ul {
     list-style: none;
   }
-  a{
+
+  a {
     text-decoration: none;
   }
+
   box-sizing: border-box;
 }
 
@@ -32,153 +37,4 @@ body {
   height: 100vh;
   display: flex;
   overflow: hidden;
-}
-
-.banner {
-  width: 45%;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-
-  img{
-    position: absolute;
-    z-index: 10;
-    width: 42rem;
-    height: 40rem;
-    object-fit: cover;
-    top: 60px;
-    left: -90px;
-  }
-  .banner-header{
-    width: 100%;
-    padding: 5%;
-    h1{
-      font-size: 2.5rem;
-    }
-  }
-}
-
-.formulário {
-  border-radius: 20px 0px 0px 20px;
-  width: 55%;
-  padding: 5%;
-  background-color: $Almost-White;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  border: 3px solid red;
-
-  .formulário-cadastro{
-    width: 100%;
-    border: 3px solid red;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    h1 {
-      font-size: 2rem;
-      color: $Medium-Gray;
-    }
-    fieldset{
-      width: 70%;
-      border: 3px solid red;
-      display: flex;
-      flex-direction: column;
-      gap: 2rem;
-    }
-
-  }
-}
-
-.label {
-  position: relative;
-  width: 100%;
-  border: 3px solid red;
-
-  input {
-    outline: none;
-    font-size: 1rem;
-    width: 100%;
-    border: none;
-    background-color: transparent;
-    border-bottom: 2px solid #4038a0;
-  }
-
-  label {
-    top: -15px;
-    left: 0;
-    pointer-events: none;
-    font-size: 12px;
-    position: absolute;
-    transition: all 0.2s ease-out;
-    color: $Medium-Gray;
-  }
-}
-
-.termosDeUso{
-  text-align: center;
-  font-size: 14px;
-  display: flex;
-  align-items: center;
-  margin: -1.5rem 0 2rem;
-  input{
-    width: 16px;
-    height: 16px;
-  }
-}
-
-.buttonConcluido {
-  width: 70%;
-  button {
-    @include button;
-    width: 100%;
-    background-color: $Purple;
-    transition: all 0.3s ease-in-out;
-      &:hover{
-        background-color: rgb(57, 15, 126);
-      }
-  }
-}
-
-.outrasOpções {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  margin: 3rem 0 1rem 0;
-  width: 100%;
-  border: 3px solid red;
-
-  .botoes {
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    margin-top: 1rem;
-
-    .google {
-      @include button;
-      background-color: #CF4332;
-      transition: all 0.3s ease-in-out;
-      &:hover{
-        background-color: #943126;
-      }
-    }
-    .facebook{
-      @include button;
-      background-color: #3C66C4;
-      transition: all 0.3s ease-in-out;
-      &:hover{
-        background-color: #3558a3;
-      }
-    }
-    .twitter{
-      @include button;
-      background-color: #3698D9;
-      transition: all 0.3s ease-in-out;
-      &:hover{
-        background-color: #2d7fb6;
-      }
-    }
-  }
 }

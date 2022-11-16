@@ -1,0 +1,154 @@
+
+.formulário {
+  border-radius: 20px 0px 0px 20px;
+  width: 55%;
+  padding: 5%;
+  background-color: $Almost-White;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.trocar-login {
+  width: 120%;
+  height: 3rem;
+  margin-bottom: 3rem;
+  display: flex;
+  justify-content: flex-end;
+
+  button {
+    @include button;
+    padding: 7px 0;
+    width: 6.5rem;
+    background-color: $Purple;
+    transition: all 0.3s ease-in-out;
+    margin-left: 0.5rem;
+
+    &:hover {
+      background-color: rgb(57, 15, 126);
+    }
+  }
+}
+
+.formulário-cadastro {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+  h1 {
+    font-size: 2rem;
+    color: $Medium-Gray;
+    margin-bottom: 2.5rem;
+  }
+
+  fieldset {
+    width: 70%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+}
+
+.label {
+  position: relative;
+  width: 100%;
+
+  input {
+    outline: none;
+    font-size: 1rem;
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    border-bottom: 2px solid #4038a0;
+  }
+
+  label {
+    top: -15px;
+    left: 0;
+    pointer-events: none;
+    font-size: 12px;
+    position: absolute;
+    transition: all 0.2s ease-out;
+    color: $Medium-Gray;
+  }
+}
+
+.termosDeUso {
+  text-align: center;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  margin: -1.5rem 0 2rem;
+
+  input {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+.buttonConcluido {
+  width: 70%;
+
+  button {
+    @include button;
+    width: 100%;
+    background-color: $Purple;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      background-color: rgb(57, 15, 126);
+    }
+  }
+}
+
+.outrasOpções {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 3rem 0 1rem 0;
+  width: 80%;
+
+  .botoes {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1rem;
+
+    .google {
+      @include button;
+      background-color: #CF4332;
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        background-color: #943126;
+      }
+    }
+
+    .facebook {
+      @include button;
+      background-color: #3C66C4;
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        background-color: #3558a3;
+      }
+    }
+
+    .twitter {
+      @include button;
+      background-color: #3698D9;
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        background-color: #2d7fb6;
+      }
+    }
+  }
+}
