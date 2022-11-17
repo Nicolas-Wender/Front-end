@@ -1,6 +1,6 @@
 .banner {
   width: 45%;
-  padding: 0 4%;
+  padding: 4% 4%;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -23,20 +23,15 @@
       text-shadow: 0.1rem 0.1rem 0.3rem rgba(17, 12, 46, 0.15);
       padding-bottom: 1rem;
     }
-    div{
-      background-color: $Almost-White;
-      width: 80%;
-      height: 3px;
-    }
   }
 
   img {
     position: absolute;
     z-index: 10;
-    width: 47rem;
+    width: 48rem;
     height: 40rem;
     object-fit: cover;
-    top: 60px;
+    top: 5.5rem;
     left: -100px;
   }
 

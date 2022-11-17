@@ -1,7 +1,7 @@
 @charset "UTF-8";
 .banner {
   width: 45%;
-  padding: 0 4%;
+  padding: 4% 4%;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -23,19 +23,14 @@
   text-shadow: 0.1rem 0.1rem 0.3rem rgba(17, 12, 46, 0.15);
   padding-bottom: 1rem;
 }
-.banner .banner-header div {
-  background-color: hsl(0deg, 0%, 98%);
-  width: 80%;
-  height: 3px;
-}
 .banner img {
   position: absolute;
   z-index: 10;
-  width: 47rem;
+  width: 48rem;
   height: 40rem;
   -o-object-fit: cover;
      object-fit: cover;
-  top: 60px;
+  top: 5.5rem;
   left: -100px;
 }
 
@@ -53,7 +48,7 @@
 .trocar-login {
   width: 120%;
   height: 3rem;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
   display: flex;
   justify-content: flex-end;
 }
@@ -84,9 +79,9 @@
   align-items: center;
 }
 .formulário-cadastro h1 {
-  font-size: 2rem;
+  font-size: 3rem;
   color: hsl(0deg, 0%, 41%);
-  margin-bottom: 2.5rem;
+  margin-bottom: 3rem;
 }
 .formulário-cadastro fieldset {
   width: 70%;
