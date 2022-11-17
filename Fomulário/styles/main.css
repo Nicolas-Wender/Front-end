@@ -1,7 +1,7 @@
 @charset "UTF-8";
 .banner {
   width: 45%;
-  padding: 4% 4%;
+  padding: 2% 4%;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -21,36 +21,35 @@
 .banner .banner-header h2 {
   text-align: justify;
   text-shadow: 0.1rem 0.1rem 0.3rem rgba(17, 12, 46, 0.15);
-  padding-bottom: 1rem;
 }
 .banner img {
   position: absolute;
   z-index: 10;
-  width: 48rem;
+  width: 42rem;
   height: 40rem;
   -o-object-fit: cover;
      object-fit: cover;
-  top: 5.5rem;
-  left: -100px;
+  top: 5rem;
+  left: -80px;
 }
 
 .formulário {
-  border-radius: 20px 0px 0px 20px;
+  border-radius: 1.5rem;
   width: 55%;
-  padding: 5%;
+  padding: 1% 5%;
   background-color: hsl(0deg, 0%, 98%);
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   flex-direction: column;
   align-items: center;
 }
 
 .trocar-login {
   width: 120%;
-  height: 3rem;
-  margin-bottom: 2rem;
+  height: 2rem;
   display: flex;
   justify-content: flex-end;
+  color: hsl(0deg, 0%, 41%);
 }
 .trocar-login button {
   cursor: pointer;
@@ -77,11 +76,11 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  gap: 2.5rem;
 }
 .formulário-cadastro h1 {
   font-size: 3rem;
   color: hsl(0deg, 0%, 41%);
-  margin-bottom: 3rem;
 }
 .formulário-cadastro fieldset {
   width: 70%;
@@ -117,11 +116,11 @@
   font-size: 14px;
   display: flex;
   align-items: center;
-  margin: -1.5rem 0 2rem;
 }
 .termosDeUso input {
-  width: 16px;
-  height: 16px;
+  width: 20px;
+  height: 20px;
+  margin-right: 0.5rem;
 }
 
 .buttonConcluido {
@@ -149,8 +148,8 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  margin: 3rem 0 1rem 0;
   width: 80%;
+  color: hsl(0deg, 0%, 41%);
 }
 .outrasOpções .botoes {
   width: 100%;
@@ -226,14 +225,17 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: hsla(240deg, 81%, 63%, 0.5);
+  background-color: hsl(0deg, 0%, 98%);
   font-family: "Poppins", sans-serif;
 }
 
 .container {
   position: absolute;
-  width: 100%;
-  height: 100vh;
+  background-color: hsla(240deg, 81%, 63%, 0.5);
+  border-radius: 1.5rem;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+  width: 95%;
+  height: 95vh;
   display: flex;
   overflow: hidden;
 }/*# sourceMappingURL=main.css.map */

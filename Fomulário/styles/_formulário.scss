@@ -1,11 +1,10 @@
-
 .formulário {
-  border-radius: 20px 0px 0px 20px;
+  border-radius: 1.5rem;
   width: 55%;
-  padding: 5%;
+  padding: 1% 5%;
   background-color: $Almost-White;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   flex-direction: column;
   align-items: center;
 }
@@ -13,10 +12,10 @@
 
 .trocar-login {
   width: 120%;
-  height: 3rem;
-  margin-bottom: 2rem;
+  height: 2rem;
   display: flex;
   justify-content: flex-end;
+  color: $Medium-Gray;
 
   button {
     @include button;
@@ -38,11 +37,11 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  gap: 2.5rem;
 
   h1 {
     font-size: 3rem;
     color: $Medium-Gray;
-    margin-bottom: 3rem;
   }
 
   fieldset {
@@ -83,11 +82,11 @@
   font-size: 14px;
   display: flex;
   align-items: center;
-  margin: -1.5rem 0 2rem;
 
   input {
-    width: 16px;
-    height: 16px;
+    width: 20px;
+    height: 20px;
+    margin-right: 0.5rem;
   }
 }
 
@@ -111,8 +110,8 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  margin: 3rem 0 1rem 0;
   width: 80%;
+  color: $Medium-Gray;
 
   .botoes {
     width: 100%;

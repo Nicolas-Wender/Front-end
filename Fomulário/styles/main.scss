@@ -27,14 +27,17 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: $Purple;
+  background-color: $Almost-White;
   font-family: 'Poppins', sans-serif;
 }
 
 .container {
   position: absolute;
-  width: 100%;
-  height: 100vh;
+  background-color: $Purple;
+  border-radius: 1.5rem;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+  width: 95%;
+  height: 95vh;
   display: flex;
   overflow: hidden;
 }
