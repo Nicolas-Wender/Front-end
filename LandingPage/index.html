@@ -1,41 +1,56 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
-    <title>Landing Page</title>
-  </head>
-  <body>
-    <header class="flex my-8 w-screen flex-row justify-around items-center">
-      <div class="flex flex-row justify-between">
-        <div class="w-6 h-6 bg-black rounded-full"></div>
-        <h1 class="ml-3 text-base">Title of Bank</h1>
-      </div>
-      <div class="'NAV_BAR'">
-        <ul class="flex flex-row">
-          <li class="text-base mr-2.5 hover:text-gray-400 cursor-pointer">Home</li>
-          <li class="text-base mx-2.5 hover:text-gray-400 cursor-pointer">About</li>
-          <!-- <li>Company</li> History OurTeam Blog -->
-          <li class="text-base mx-2.5 hover:text-gray-400 cursor-pointer">For you</li>
-          <!-- Conta Products CartãoDeCredito -->
-          <li class="text-base ml-2.5 hover:text-gray-400 cursor-pointer">Contact</li>
-        </ul>
-      </div>
-      <div class="'LOGIN'">
-        <button class=" hover:text-gray-400 text-base">Cadastrar</button>
-        <button
-          class="text-white bg-black rounded-lg p-1 px-6 text-base mx-2.5 hover:bg-white hover:text-black border-solid border-2 border-black-500"
-        >
-          Login
-        </button>
-      </div>
-    </header>
-    <main class="w-screen h-32 border-solid border-2 border-sky-500">
-      <aside></aside>
-      <aside></aside>
-    </main>
-    <footer></footer>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/main.css">
+  <title>Document</title>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">LOGO</div>
+      <ul>
+        <li ><a href="#">Features</a>
+          <div class="dropDown">
+            <ul>
+              <li><span>&#9889;</span><a href="#">Company</a></li>
+              <li><span>&#9889;</span><a href="#">Company</a></li>
+              <li><span>&#9889;</span><a href="#">Company</a></li>
+              <li><span>&#9889;</span><a href="#">Company</a></li>
+            </ul>
+          </div>
+        </li>
+        <li><a class="Company" href="#">Company</a>
+          <div class="dropDown">
+            <ul>
+              <li><span>&#9889;</span><a href="#">Company</a></li>
+              <li><span>&#9889;</span><a href="#">Company</a></li>
+              <li><span>&#9889;</span><a href="#">Company</a></li>
+              <li><span>&#9889;</span><a href="#">Company</a></li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="#">Carrers</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+    </nav>
+    <div class="buttons">
+      <button>Login</button>
+      <button class="b-right">Cadastrar</button>
+    </div>
+  </header>
+  <main>
+    <aside class="conteúdo">
+      <span>A expressão Lorem ipsum</span>
+      <h1>Lorem ipsum</h1>
+      <p>A expressão Lorem ipsum em design gráfico e editoração é um texto padrão em latim utilizado na produção gráfica para preencher os espaços de texto</p>
+      <button>button</button>
+    </aside>
+    <aside class="banner">
+      Illustration by <a href="https://icons8.com/illustrations/author/JTmm71Rqvb2T">Dani Grapevine</a> from <a href="https://icons8.com/illustrations">Ouch!</a>
+    </aside>  
+  </main>   
+</body>
 </html>

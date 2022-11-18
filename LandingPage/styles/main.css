@@ -1,0 +1,146 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap");
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: "Epilogue", sans-serif;
+}
+
+body {
+  height: 100vh;
+  background-color: hsl(0deg, 0%, 98%);
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 15px;
+}
+header nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+header nav .logo {
+  margin: 0px 15px;
+  font-size: 30px;
+  color: hsl(0deg, 0%, 8%);
+}
+header nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+header nav ul li {
+  list-style: none;
+  margin: 0px 5px;
+}
+header nav ul li .dropDown {
+  display: none;
+  margin-top: 10px;
+  position: absolute;
+}
+header nav ul li .dropDown ul {
+  background-color: hsl(0deg, 0%, 98%);
+  padding: 4px 8px;
+  width: 145px;
+  height: 175px;
+  border-radius: 12px;
+  box-shadow: 6px 6px 29px rgba(100, 100, 111, 0.2);
+  list-style: none;
+  display: grid;
+  justify-content: start;
+  align-content: space-evenly;
+}
+header nav ul li .dropDown ul span {
+  margin-right: 12px;
+}
+header nav ul li a {
+  color: hsl(0deg, 0%, 8%);
+  transition: all 0.3s;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 16px;
+}
+header nav ul li a:hover {
+  cursor: pointer;
+}
+header nav ul li a a:hover {
+  color: hsl(0deg, 0%, 98%);
+}
+header .buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 0px 0px 80px;
+}
+header .buttons button {
+  color: hsl(0deg, 0%, 8%);
+  transition: all 0.3s;
+  font-size: 16px;
+  background-color: hsl(0deg, 0%, 98%);
+}
+header .buttons button:hover {
+  cursor: pointer;
+}
+header .buttons button a:hover {
+  color: hsl(0deg, 0%, 98%);
+}
+header .buttons .b-right {
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 10px;
+  margin: 0px 10px;
+  transition: all 0.3s;
+}
+header .buttons .b-right:hover {
+  cursor: pointer;
+  color: hsl(0deg, 0%, 98%);
+  background-color: hsl(0deg, 0%, 8%);
+}
+
+li:hover .dropDown {
+  display: inherit;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0px 70px;
+}
+main .conteúdo {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  border: 5px solid red;
+}
+main .conteúdo span {
+  color: hsl(0deg, 0%, 41%);
+}
+main .conteúdo h1 {
+  font-size: 30px;
+  margin: 26px 0px;
+}
+main .conteúdo p {
+  color: hsl(0deg, 0%, 8%);
+}
+main .conteúdo button {
+  margin: 26px 0px;
+  padding: 10px;
+  font-size: 16px;
+}
+main .banner {
+  width: 50%;
+  border: 5px solid red;
+}/*# sourceMappingURL=main.css.map */
