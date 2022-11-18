@@ -10,15 +10,12 @@ $Almost-Black: hsl(0, 0%, 8%);
 }
 
 @mixin hover{
-  color: $Almost-Black;
   transition: all 0.3s;
-    &:hover{
-      cursor: pointer;
-    }
-    a:hover {
-      color: $Almost-White;
-    }
-      
+  &:hover{
+    cursor: pointer;
+    color: $Medium-Gray;
+  }
+   
 }
 
 @mixin dropDown{
@@ -34,7 +31,7 @@ $Almost-Black: hsl(0, 0%, 8%);
     justify-content: start;
     align-content: space-evenly;
     span{
-    margin-right: 12px;
+      margin-right: 12px;
     }
   }
 }
