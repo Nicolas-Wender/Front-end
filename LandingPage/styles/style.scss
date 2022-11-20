@@ -1,0 +1,48 @@
+@import "variables.scss";
+@import "header.scss";
+@import "main.scss";
+
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  list-style: none;
+  font-family: 'Epilogue', sans-serif;
+}
+
+::-webkit-scrollbar{
+  width: 18px;
+}
+
+::-webkit-scrollbar-thumb{
+  border: 3px solid $Almost-White;
+  background: $Medium-Gray;
+  border-radius: 1rem;
+}
+
+body {
+  height: 100vh;
+  background-color: $Almost-White;
+}
+
+
+.continue{
+  width: 100%;
+  @include flex-row;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: -3.5rem;
+  h1{
+    font-family: 'Inter';
+    font-size: 1rem;
+    color: $Almost-Black;
+  }
+}
+
+.ponto{
+  margin-top: 10rem;
+}
+//animação no hover
+// hover com o menu cinza e a opção em preto 

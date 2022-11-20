@@ -1,0 +1,102 @@
+
+header {
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+  @include efeitoVidro;
+  @include flex-row;
+  justify-content: space-between;
+  padding: 1rem 5rem;
+ 
+  .logo {
+    font-family: 'Inter';
+    font-size: 2rem;
+    font-weight: 500;
+    color: $Almost-Black;
+  }
+
+  nav {
+    @include flex-row;
+    align-items: baseline;
+    gap: 4rem;
+
+    ul {
+      @include flex-row;
+      gap: 1.5rem;
+
+      .nav-li{
+        padding-bottom: 1rem;
+        padding-right: 1rem;
+      }
+
+      li {
+    
+        .dropDown {
+          display: none;
+          margin-top: 1rem;
+          position: absolute;
+          @include dropDown;
+        }
+
+        a {
+          color: $Almost-Black;
+          @include hover;
+          padding: 0.5rem;
+          text-decoration: none;
+          font-family: 'Inter';
+          font-size: 1rem;
+          font-weight: 500;
+          position: relative;
+          width: 100%;
+          height: 100%;
+
+          span{
+            font-size: 2rem;
+            position: absolute;
+            transform: translate(50%,-55%);
+            transition: all 1.3s;
+
+          }
+
+        }
+      }
+    }
+  }
+
+  li:hover{
+    .dropDown {
+      display: inherit;
+    }
+    a span{
+      position: absolute;
+      transform: translate(50%, 25%) rotateX(180deg);
+    }
+  }
+}
+
+.buttons {
+  @include flex-row;
+
+  button {
+    font-family: 'Inter';
+    font-weight: 500;
+    @include hover;
+    font-size: 1rem;
+    background-color: $Almost-White;
+  }
+
+  .b-right {
+    padding: 0.8rem;
+    border: 2px solid $Almost-Black;
+    border-radius: 10px;
+    margin: 0 1.5rem;
+    transition: all 0.3s;
+
+    &:hover {
+      cursor: pointer;
+      color: $Almost-White;
+      background-color: $Purple;
+      border: 2px solid $Purple;
+    }
+  }
+}

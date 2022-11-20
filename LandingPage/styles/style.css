@@ -1,19 +1,4 @@
 @charset "UTF-8";
-* {
-  box-sizing: border-box;
-  text-decoration: none;
-  margin: 0;
-  padding: 0;
-  border: 0;
-  list-style: none;
-  font-family: "Epilogue", sans-serif;
-}
-
-body {
-  height: 100vh;
-  background-color: hsl(0deg, 0%, 98%);
-}
-
 header {
   position: fixed;
   z-index: 2;
@@ -105,31 +90,32 @@ header li:hover a span {
   position: absolute;
   transform: translate(50%, 25%) rotateX(180deg);
 }
-header .buttons {
+
+.buttons {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
-header .buttons button {
+.buttons button {
   font-family: "Inter";
   font-weight: 500;
   transition: all 0.3s;
   font-size: 1rem;
   background-color: hsl(0deg, 0%, 98%);
 }
-header .buttons button:hover {
+.buttons button:hover {
   cursor: pointer;
   color: hsl(0deg, 0%, 41%);
 }
-header .buttons .b-right {
+.buttons .b-right {
   padding: 0.8rem;
   border: 2px solid hsl(0deg, 0%, 8%);
   border-radius: 10px;
   margin: 0 1.5rem;
   transition: all 0.3s;
 }
-header .buttons .b-right:hover {
+.buttons .b-right:hover {
   cursor: pointer;
   color: hsl(0deg, 0%, 98%);
   background-color: hsl(257deg, 72%, 47%);
@@ -200,6 +186,31 @@ main .banner img {
   transform: translate(-10%, -12%);
 }
 
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  list-style: none;
+  font-family: "Epilogue", sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 18px;
+}
+
+::-webkit-scrollbar-thumb {
+  border: 3px solid hsl(0deg, 0%, 98%);
+  background: hsl(0deg, 0%, 41%);
+  border-radius: 1rem;
+}
+
+body {
+  height: 100vh;
+  background-color: hsl(0deg, 0%, 98%);
+}
+
 .continue {
   width: 100%;
   display: flex;
@@ -218,4 +229,4 @@ main .banner img {
 
 .ponto {
   margin-top: 10rem;
-}/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=style.css.map */
