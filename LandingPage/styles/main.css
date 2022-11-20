@@ -21,7 +21,7 @@ header {
   background: hsla(0deg, 0%, 98%, 0.35);
   backdrop-filter: blur(13.5px);
   -webkit-backdrop-filter: blur(13.5px);
-  border-radius: 1rem;
+  border-radius: 0 0 1rem 1rem;
   border: 1px solid rgba(255, 255, 255, 0.18);
   display: flex;
   flex-direction: row;
@@ -41,6 +41,7 @@ header nav {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  align-items: baseline;
   gap: 4rem;
 }
 header nav ul {
@@ -48,7 +49,11 @@ header nav ul {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
+  gap: 1.5rem;
+}
+header nav ul .nav-li {
+  padding-bottom: 1rem;
+  padding-right: 1rem;
 }
 header nav ul li .dropDown {
   display: none;
@@ -56,19 +61,20 @@ header nav ul li .dropDown {
   position: absolute;
 }
 header nav ul li .dropDown ul {
+  position: relative;
   background-color: hsl(0deg, 0%, 98%);
-  padding: 4px 8px;
-  width: 145px;
-  height: 175px;
-  border-radius: 12px;
+  padding: 1rem 0;
+  width: 10rem;
+  height: 12rem;
+  border-radius: 1rem;
   box-shadow: 6px 6px 29px rgba(100, 100, 111, 0.2);
   list-style: none;
   display: grid;
-  justify-content: start;
+  justify-content: center;
   align-content: space-evenly;
 }
 header nav ul li .dropDown ul span {
-  margin-right: 12px;
+  margin-right: 0.5rem;
 }
 header nav ul li a {
   color: hsl(0deg, 0%, 8%);
@@ -78,13 +84,26 @@ header nav ul li a {
   font-family: "Inter";
   font-size: 1rem;
   font-weight: 500;
+  position: relative;
+  width: 100%;
+  height: 100%;
 }
 header nav ul li a:hover {
   cursor: pointer;
   color: hsl(0deg, 0%, 41%);
 }
+header nav ul li a span {
+  font-size: 2rem;
+  position: absolute;
+  transform: translate(50%, -55%);
+  transition: all 1.3s;
+}
 header li:hover .dropDown {
   display: inherit;
+}
+header li:hover a span {
+  position: absolute;
+  transform: translate(50%, 25%) rotateX(180deg);
 }
 header .buttons {
   display: flex;
@@ -105,7 +124,7 @@ header .buttons button:hover {
 }
 header .buttons .b-right {
   padding: 0.8rem;
-  border: 2px solid black;
+  border: 2px solid hsl(0deg, 0%, 8%);
   border-radius: 10px;
   margin: 0 1.5rem;
   transition: all 0.3s;
@@ -113,7 +132,8 @@ header .buttons .b-right {
 header .buttons .b-right:hover {
   cursor: pointer;
   color: hsl(0deg, 0%, 98%);
-  background-color: hsl(0deg, 0%, 8%);
+  background-color: hsl(257deg, 72%, 47%);
+  border: 2px solid hsl(257deg, 72%, 47%);
 }
 
 main {
@@ -122,7 +142,7 @@ main {
   justify-content: center;
   align-items: center;
   justify-content: space-between;
-  padding: 1.5rem 5rem;
+  padding: 0 5rem;
 }
 main .conteúdo {
   width: 50%;
@@ -137,7 +157,7 @@ main .conteúdo {
   gap: 2rem;
 }
 main .conteúdo h2 {
-  color: hsl(0deg, 0%, 41%);
+  color: hsl(2deg, 64%, 54%);
   font-family: "Inter";
   font-size: 1rem;
 }
@@ -145,6 +165,7 @@ main .conteúdo h1 {
   font-family: "Bely Display";
   margin-top: -2rem;
   font-size: 4rem;
+  color: hsl(0deg, 0%, 8%);
 }
 main .conteúdo p {
   color: hsl(0deg, 0%, 8%);
@@ -165,15 +186,36 @@ main .conteúdo button {
 main .conteúdo button:hover {
   cursor: pointer;
   color: hsl(0deg, 0%, 98%);
-  background-color: hsl(0deg, 0%, 8%);
+  background-color: hsl(257deg, 72%, 47%);
+  border: 2px solid hsl(257deg, 72%, 47%);
 }
 main .banner {
   width: 50%;
-  height: 85vh;
+  height: 100vh;
   overflow: hidden;
 }
 main .banner img {
   width: 145%;
   height: 140%;
   transform: translate(-10%, -12%);
+}
+
+.continue {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: -3.5rem;
+}
+.continue h1 {
+  font-family: "Inter";
+  font-size: 1rem;
+  color: hsl(0deg, 0%, 8%);
+}
+
+.ponto {
+  margin-top: 10rem;
 }/*# sourceMappingURL=main.css.map */

@@ -1,7 +1,8 @@
 $Almost-White: hsl(0, 0%, 98%);
-$Medium-Gray: hsl(0, 0%, 41%);
 $Almost-Black: hsl(0, 0%, 8%);
+$Medium-Gray: hsl(0, 0%, 41%);
 $Purple: hsl(257, 72%, 47%);
+$Red: hsl(2, 64%, 54%);
 
 @mixin flex-row{
   display: flex;
@@ -21,18 +22,19 @@ $Purple: hsl(257, 72%, 47%);
 
 @mixin dropDown{
   ul{
+    position: relative;
     background-color: hsl(0, 0%, 98%);
-    padding:4px 8px;
-    width: 145px;
-    height: 175px;
-    border-radius: 12px;
+    padding: 1rem 0;
+    width: 10rem;
+    height: 12rem;
+    border-radius: 1rem;
     box-shadow:  6px 6px 29px rgba(100, 100, 111, 0.2);
     list-style: none;
     display: grid;
-    justify-content: start;
+    justify-content: center;
     align-content: space-evenly;
     span{
-      margin-right: 12px;
+      margin-right: 0.5rem;
     }
   }
 }
@@ -41,6 +43,6 @@ $Purple: hsl(257, 72%, 47%);
   background: hsl(0, 0%, 98%, 35%);;
   backdrop-filter: blur( 13.5px );
   -webkit-backdrop-filter: blur( 13.5px );
-  border-radius: 1rem;
+  border-radius: 0 0 1rem 1rem;
   border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
