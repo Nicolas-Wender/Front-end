@@ -1,6 +1,7 @@
 $Almost-White: hsl(0, 0%, 98%);
 $Medium-Gray: hsl(0, 0%, 41%);
 $Almost-Black: hsl(0, 0%, 8%);
+$Purple: hsl(257, 72%, 47%);
 
 @mixin flex-row{
   display: flex;
@@ -34,4 +35,12 @@ $Almost-Black: hsl(0, 0%, 8%);
       margin-right: 12px;
     }
   }
+}
+
+@mixin efeitoVidro {
+  background: hsl(0, 0%, 98%, 35%);;
+  backdrop-filter: blur( 13.5px );
+  -webkit-backdrop-filter: blur( 13.5px );
+  border-radius: 1rem;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
