@@ -1,0 +1,53 @@
+.header_container{
+  padding-inline: 15px;
+}
+
+.btn{
+  color:$white;
+  border-radius: 50px;
+}
+
+.btn-outline{
+  font-size: $fs-6;
+  font-weight: $fw-500;
+  border: 1px solid $white;
+  padding: 5px 15px;
+  transition: $transition-1;
+
+  &:is(:hover,:focus){
+    background: $blue-crayola;
+    border-color: $blue-crayola;
+  }
+}
+
+.btn-primary {
+  position: relative;
+  background-color: $blue-crayola;
+  max-width: max-content;
+  font-weight: $fw-700;
+  padding: 13px 30px;
+  overflow: hidden;
+  z-index: 1;
+
+  &::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: -50px;
+    background-image: $gradient;
+    transform: translateX(-100%);
+    opacity: 0;
+    z-index: -1;
+    transition: $transition-2;
+  }
+
+  &:is(:hover, :focus)::after{
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+
+
